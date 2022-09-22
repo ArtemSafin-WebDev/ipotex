@@ -1,0 +1,101 @@
+.clients {
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    background-color: #fff;
+
+    @include breakpoint(mobile) {
+        padding-top: 4.8rem;
+        padding-bottom: 7rem;
+    }
+}
+
+.clients__content {
+    display: flex;
+    flex-direction: column;
+}
+
+.clients__heading {
+    display: flex;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 120%;
+    color: var(--text-color);
+    padding: 0.2rem 0.9rem;
+    padding-bottom: 0.35rem;
+    background: #8ef6e4;
+    border-radius: 5rem;
+    align-self: flex-start;
+    margin-bottom: 2rem;
+
+    @include breakpoint(mobile) {
+        font-size: 1.6rem;
+        line-height: 120%;
+        margin-bottom: 1rem;
+    }
+}
+
+.clients__top-row {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-gap: 4rem;
+    align-items: flex-start;
+    margin-bottom: 7rem;
+
+    @include breakpoint(mobile) {
+        grid-template-columns: minmax(0, 1fr);
+        grid-gap: 1.7rem;
+        align-items: stretch;
+        margin-bottom: 4.5rem;
+    }
+}
+
+.clients__secondary-heading {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.6rem;
+    line-height: 4rem;
+    grid-column: 1 / 8;
+
+    @include breakpoint(mobile) {
+        grid-column: 1 / -1;
+        font-weight: 400;
+        font-size: 2.3rem;
+        line-height: 2.7rem;
+    }
+}
+
+.clients__text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    grid-column: 8 / -1;
+    max-width: 38rem;
+
+    @include breakpoint(mobile) {
+        max-width: none;
+        grid-column: 1 / -1;
+        font-weight: 300;
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+    }
+}
+
+.clients__list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-gap: 4rem;
+    align-items: center;
+
+    @include breakpoint(mobile) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-gap: 2rem;
+    }
+}
+
+.clients__card-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}

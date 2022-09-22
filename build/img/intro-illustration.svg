@@ -1,0 +1,60 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 564 522.08">
+    <defs>
+        <style>
+            .cls-1,
+            .cls-2,
+            .cls-3,
+            .cls-4,
+            .cls-5,
+            .cls-6 {
+                fill: none;
+                stroke: #031c17;
+                stroke-linecap: round;
+                stroke-linejoin: round;
+                stroke-width: 2px;
+                stroke-dasharray: 4 3;
+                
+            }
+
+            .cls-2 {
+                opacity: 0.8;
+            }
+
+            .cls-2,
+            .cls-3,
+            .cls-4,
+            .cls-5,
+            .cls-6 {
+                isolation: isolate;
+            }
+
+            .cls-3 {
+                opacity: 0.6;
+            }
+
+            .cls-4 {
+                opacity: 0.4;
+            }
+
+            .cls-5 {
+                opacity: 0.2;
+            }
+
+            .cls-6 {
+                opacity: 0.04;
+            }
+        </style>
+    </defs>
+    <ellipse class="cls-1" cx="279.32" cy="128.18" rx="94.85" ry="264.11"
+        transform="matrix(0.34, -0.94, 0.94, 0.34, 62.94, 346.42)" vector-effect="non-scaling-stroke"/>
+    <ellipse class="cls-2" cx="242.38" cy="228.6" rx="81.91" ry="218.07"
+        transform="translate(-55.6 377.64) rotate(-69.9)" vector-effect="non-scaling-stroke"/>
+    <ellipse class="cls-3" cx="215.05" cy="302.9" rx="68.59" ry="183.05"
+        transform="translate(-143.32 400.74) rotate(-69.9)" vector-effect="non-scaling-stroke"/>
+    <ellipse class="cls-4" cx="192.18" cy="365.07" rx="55.65" ry="148.03"
+        transform="translate(-216.7 420.07) rotate(-69.9)" vector-effect="non-scaling-stroke"/>
+    <ellipse class="cls-5" cx="169.19" cy="427.6" rx="42.33" ry="112.22"
+        transform="translate(-290.51 439.51) rotate(-69.9)" vector-effect="non-scaling-stroke"/>
+    <ellipse class="cls-6" cx="147.42" cy="477.14" rx="33.58" ry="89.02"
+        transform="translate(-351.32 451.58) rotate(-69.9)" vector-effect="non-scaling-stroke"/>
+</svg>

@@ -1,0 +1,200 @@
+.intro {
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+
+    @include breakpoint(mobile) {
+        padding-bottom: 3.5rem;
+    }
+}
+
+.intro__row {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    grid-gap: 4rem;
+
+    @include breakpoint(mobile) {
+        display: flex;
+        flex-direction: column;
+        grid-gap: 0;
+    }
+}
+
+.intro__text-content {
+    grid-column: 1 / 6;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+
+    @include breakpoint(mobile) {
+        padding: 0;
+        grid-column: 1 / -1;
+        display: contents;
+    }
+}
+
+.intro__illustration {
+    grid-column: 7 / -1;
+    position: relative;
+    @include breakpoint(mobile) {
+        grid-column: 1 / -1;
+    }
+}
+
+.intro__illustration-image {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+.intro__illustration-label {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.9rem;
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    color: var(--text-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    z-index: 10;
+    transform: translateY(-50%);
+    background: #fac8ff;
+    border-radius: 5rem;
+    padding: 0 0.7rem;
+
+    @include breakpoint(mobile) {
+        font-size: 1.3rem;
+        line-height: 120%;
+        padding: 0 0.7rem;
+    }
+
+    &--green {
+        background-color: #d7ff64;
+    }
+
+    &--violet {
+        background: #c8beff;
+    }
+
+    &--cyan {
+        background: #8ef6e4;
+    }
+}
+
+.intro__heading {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.8rem;
+    line-height: 4.4rem;
+    margin-bottom: 3.5rem;
+
+    @include breakpoint(mobile) {
+        font-size: 2.5rem;
+        line-height: 2.7rem;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.intro__text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 124%;
+    margin-bottom: 3rem;
+
+    @include breakpoint(mobile) {
+        font-size: 1.4rem;
+        line-height: 1.8rem;
+        margin-bottom: 5rem;
+    }
+}
+
+.intro__link {
+    margin-top: auto;
+    align-self: flex-start;
+    margin-bottom: 3rem;
+
+    @include breakpoint(mobile) {
+        margin: 0;
+        align-self: center;
+        margin-top: 2.5rem;
+        order: 10;
+    }
+}
+
+.intro__link {
+    display: flex;
+
+    .no-touch &:hover {
+        .intro__link-icon {
+            &::after {
+                transform: translate(-50%, -50%) translateY(1.9rem);
+            }
+
+            &::before {
+                transform: translate(-50%, -50%) translateY(0rem);
+            }
+        }
+    }
+}
+
+.intro__link-icon {
+    width: 1.9rem;
+    height: 1.9rem;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: #000000;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transform: translateZ(0);
+    &::before,
+    &::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 0.9rem;
+        height: 0.9rem;
+        background-image: url('../img/arrow-down.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: transform 0.3s;
+    }
+
+    &::before {
+        transform: translate(-50%, -50%) translateY(-1.9rem);
+    }
+}
+
+.intro__link-text {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 120%;
+    background: #f4f4f4;
+    border-radius: 5rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding-right: 0.7rem;
+    display: flex;
+    align-items: center;
+    padding-left: 1.5rem;
+    margin-left: -0.9rem;
+
+    @include breakpoint(mobile) {
+        font-size: 1.3rem;
+        line-height: 1.2;
+        
+        
+    }
+}
