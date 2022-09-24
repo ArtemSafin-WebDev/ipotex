@@ -2,10 +2,12 @@
     background: #031c17;
     color: white;
     padding: 6rem 0;
+    margin-bottom: 11rem;
 
     @include breakpoint(mobile) {
         padding-top: 4rem;
         padding-bottom: 8rem;
+        margin-bottom: 4.7rem;
     }
 }
 
@@ -160,6 +162,10 @@
     display: flex;
     flex-direction: column;
     gap: 5.7rem;
+
+    @include breakpoint(mobile) {
+        gap: 2.7rem;
+    }
 }
 
 .monitoring__slider {
@@ -170,6 +176,10 @@
     .swiper-slide {
         margin: 0 2.8rem;
         width: max-content;
+
+        @include breakpoint(mobile) {
+            margin: 0 .9rem;
+        }
     }
 }
 
@@ -178,4 +188,8 @@
     width: auto;
     max-width: none;
     object-fit: contain;
+
+    @include breakpoint(mobile) {
+        height: 2.7rem;
+    }
 }

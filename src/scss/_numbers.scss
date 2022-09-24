@@ -1,0 +1,64 @@
+.numbers {
+    margin-bottom: 11rem;
+
+    @include breakpoint(mobile) {
+        margin-bottom: 8rem;
+    }
+}
+
+.numbers__text {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.3rem;
+    line-height: 2.8rem;
+    max-width: 96rem;
+    margin-bottom: 4rem;
+
+    @include breakpoint(mobile) {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.6rem;
+        line-height: 2.1rem;
+        margin-bottom: 3rem;
+    }
+}
+
+.numbers__list {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-gap: 4rem;
+
+    @include breakpoint(mobile) {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-gap: 2rem;
+        grid-row-gap: 3.2rem;
+    }
+}
+
+.numbers__card {
+    display: flex;
+    flex-direction: column;
+}
+
+.numbers__card-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    color: #031c17;
+    background: #8ef6e4;
+    border-radius: 2rem;
+    text-align: center;
+    padding: 0.3rem 1.2rem;
+    align-self: flex-start;
+    margin-bottom: 1.2rem;
+}
+
+.numbers__card-text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+    max-width: 23rem;
+}

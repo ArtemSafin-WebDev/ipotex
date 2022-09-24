@@ -2,10 +2,12 @@
     background: #f2faf8;
     padding-top: 6rem;
     padding-bottom: 6rem;
+    margin-bottom: 6rem;
 
     @include breakpoint(mobile) {
         padding-top: 3.5rem;
         padding-bottom: 4rem;
+        margin-bottom: 4rem;
     }
 }
 
@@ -131,21 +133,21 @@
         border-radius: 0.5rem;
 
         @include breakpoint(mobile) {
-            border-radius: .2rem;
+            border-radius: 0.2rem;
         }
     }
 
-    &--violet {
+    .swiper-slide:nth-child(4n + 2) & {
         span {
             background: #c8bfff;
         }
     }
-    &--green {
+    .swiper-slide:nth-child(4n + 3) & {
         span {
             background: #d7ff64;
         }
     }
-    &--pink {
+    .swiper-slide:nth-child(4n + 4) & {
         span {
             background: #fac7ff;
         }
@@ -193,7 +195,7 @@
 
         @include breakpoint(mobile) {
             left: 0;
-            top: .65rem;
+            top: 0.65rem;
         }
     }
 }

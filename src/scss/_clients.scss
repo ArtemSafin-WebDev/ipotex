@@ -1,11 +1,11 @@
 .clients {
-    padding-top: 12rem;
-    padding-bottom: 12rem;
+   
+    margin-bottom: 12rem;
     background-color: #fff;
 
     @include breakpoint(mobile) {
-        padding-top: 4.8rem;
-        padding-bottom: 7rem;
+        
+        margin-bottom: 7rem;
     }
 }
 

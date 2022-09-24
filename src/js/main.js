@@ -11,6 +11,7 @@ import menu from './menu';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import service from './service';
+import teamCards from './teamCards';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -25,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
     tabs();
     menu();
     service();
+    teamCards();
     
 });
 

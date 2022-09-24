@@ -1,9 +1,9 @@
 .focus {
-    padding-top: 6rem;
-    padding-bottom: 9rem;
+    
+    margin-bottom: 9rem;
 
     @include breakpoint(mobile) {
-        padding: 4rem 0;
+        margin-bottom: 4rem;
     }
 }
 
