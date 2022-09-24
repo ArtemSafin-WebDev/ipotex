@@ -45,6 +45,39 @@
     display: block;
     height: auto;
     width: 100%;
+    animation-name: floating-image;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+
+@keyframes floating-image {
+    0% {
+        transform: translateY(0rem);
+    }
+
+    50% {
+        transform: translateY(2rem);
+    }
+
+    100% {
+        transform: translateY(0rem);
+    }
+}
+
+@keyframes floating-label {
+    0% {
+        transform: translateY(50%);
+    }
+
+    50% {
+        transform: translateY(50%) translateY(2rem);
+    }
+
+    100% {
+        transform: translateY(50%);
+    }
 }
 
 .intro__illustration-label {
@@ -64,6 +97,13 @@
     background: #fac8ff;
     border-radius: 5rem;
     padding: 0 0.7rem;
+
+
+    animation-name: floating-label;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-delay: .1s;
 
     @include breakpoint(mobile) {
         font-size: 1.3rem;
