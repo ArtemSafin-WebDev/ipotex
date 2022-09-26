@@ -192,10 +192,18 @@
     background: #8ef6e4;
     border-radius: 4rem;
     padding: 1.2rem 2rem;
+    transition: background-color .2s, color .2s;
+
+    .no-touch &:hover,
+    .touch &:active {
+        background: #031C17;
+        color: white;
+    }
 
     @include breakpoint(mobile) {
         font-size: 1.6rem;
         line-height: 1.9rem;
         padding: 1.7rem 3.6rem;
+        
     }
 }

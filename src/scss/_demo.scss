@@ -160,6 +160,13 @@ textarea.demo__form-input {
     background-color: #fff;
     padding: 1.7rem 3.6rem;
     border-radius: 3rem;
+    transition: color .2s, background-color .2s;
+
+    .no-touch &:hover,
+    .touch &:active {
+        background: #8EF6E4;
+        
+    }
 
     @include breakpoint(mobile) {
         font-style: normal;

@@ -129,6 +129,12 @@
     display: flex;
     align-items: center;
     white-space: nowrap;
+    transition: color .2s;
+
+    .no-touch &:hover,
+    .touch &:active {
+        color: #D7FF64;
+    }
 
    
 }
