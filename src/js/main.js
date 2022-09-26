@@ -13,6 +13,9 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import service from './service';
 import teamCards from './teamCards';
 import monitoringSliders from './monitoringSliders';
+import cursor from './handMove';
+import header from './header';
+import sections from './sections';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -29,6 +32,9 @@ document.addEventListener('DOMContentLoaded', function () {
     service();
     teamCards();
     monitoringSliders();
+    cursor();
+    header();
+    sections();
     
 });
 

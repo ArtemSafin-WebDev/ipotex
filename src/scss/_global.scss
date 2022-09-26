@@ -13,6 +13,9 @@
     --text-color: #031c17;
     --museo: 'Museo Sans Cyrl', sans-serif;
 
+
+  
+
     @include breakpoint(mobile) {
         --content-padding: 3rem;
     }
@@ -23,7 +26,13 @@ html {
     font-size: 10px;
     -webkit-text-size-adjust: 100%;
 
+    font-size: clamp(2px, 0.7vw, 11px);
+
     @include noHighlight();
+
+    @include breakpoint(mobile) {
+        font-size: 10px;
+    }
 }
 
 body {
@@ -197,4 +206,11 @@ select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
     background-color: transparent;
+}
+
+section,
+.page-header,
+.page-footer {
+    opacity: 0;
+    visibility: hidden;
 }

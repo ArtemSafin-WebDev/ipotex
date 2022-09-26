@@ -27,37 +27,37 @@
                         <nav class="page-header__nav">
                             <ul class="page-header__nav-list">
                                 <li class="page-header__nav-list-item">
-                                    <a href="#" class="page-header__nav-link">
+                                    <a href="#service" class="page-header__nav-link">
                                         Как это работает
                                     </a>
                                 </li>
                                 <li class="page-header__nav-list-item">
-                                    <a href="#" class="page-header__nav-link">
+                                    <a href="#focus" class="page-header__nav-link">
                                         Для кого
                                     </a>
                                 </li>
                                 <li class="page-header__nav-list-item">
-                                    <a href="#" class="page-header__nav-link">
+                                    <a href="#monitoring" class="page-header__nav-link">
                                         Партнеры
                                     </a>
                                 </li>
                                 <li class="page-header__nav-list-item">
-                                    <a href="#" class="page-header__nav-link">
+                                    <a href="#clients" class="page-header__nav-link">
                                         Банки-партнеры
                                     </a>
                                 </li>
                                 <li class="page-header__nav-list-item">
-                                    <a href="#" class="page-header__nav-link">
+                                    <a href="#about" class="page-header__nav-link">
                                         О команде
                                     </a>
                                 </li>
                                 <li class="page-header__nav-list-item">
-                                    <a href="#" class="page-header__nav-link">
+                                    <a href="#protect" class="page-header__nav-link">
                                         Безопасность
                                     </a>
                                 </li>
                                 <li class="page-header__nav-list-item">
-                                    <a href="#" class="page-header__nav-link">
+                                    <a href="#footer" class="page-header__nav-link">
                                         Контакты
                                     </a>
                                 </li>
@@ -108,13 +108,13 @@
                 <div class="intro__illustration-label" style="right: 5%; top: 18%;">
                     х5 консультаций
                 </div>
-                <div class="intro__illustration-label intro__illustration-label--green" style="left: -9%; top: 35%;">
+                <div class="intro__illustration-label" style="left: -9%; top: 35%;">
                     х1,5 заявок
                 </div>
-                <div class="intro__illustration-label intro__illustration-label--violet" style="right:0%; top: 56%;">
+                <div class="intro__illustration-label" style="right:0%; top: 56%;">
                     95% одобрений
                 </div>
-                <div class="intro__illustration-label intro__illustration-label--cyan" style="left:-5%; top: 78%;">
+                <div class="intro__illustration-label" style="left:-5%; top: 78%;">
                     х2 конверсия
                 </div>
             </div>
@@ -241,7 +241,7 @@
     </div>
 </section>
 
-<section class="focus">
+<section class="focus" id="focus">
     <div class="container">
         <h2 class="focus__heading">
             Держите фокус на том, что действительно важно
@@ -325,7 +325,7 @@
     </div>
 </section>
 
-<section class="monitoring js-monitoring">
+<section class="monitoring js-monitoring" id="monitoring">
     <div class="container">
         <div class="monitoring__top-row">
             <div class="monitoring__text-content">
@@ -484,7 +484,7 @@
     </div>
 </section>
 
-<section class="about">
+<section class="about" id="about">
     <div class="container">
         <div class="about__content">
             <div class="about__text-content">
@@ -727,7 +727,7 @@
     </div>
 
 </section>
-<section class="clients">
+<section class="clients" id="clients">
     <div class="container">
         <div class="clients__content">
 
@@ -791,7 +791,7 @@
 
 
 
-<section class="protect">
+<section class="protect" id="protect">
     <div class="container">
         <div class="protect__content">
             <div class="protect__text-content">
@@ -912,8 +912,12 @@
             <div class="demo__right-col">
                 <div class="demo__image-wrapper">
                     <img src="img/demo.jpg" alt="" class="demo__image">
-                    <div class="demo__image-cursor">
-                        <img src="img/cursor.svg" alt="" class="demo__image-cursor-image">
+                    <div class="demo__image-cursor" >
+                        <div class="demo__image-cursor-outer-wrapper" id="hand-wrapper">
+
+
+                            <img src="img/cursor.svg" alt="" class="demo__image-cursor-image" id="hand">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -922,7 +926,7 @@
 </section>
 
         </main>
-        <footer class="page-footer">
+        <footer class="page-footer" id="footer">
             <div class="container">
                 <div class="page-footer__top-row">
                     <a href="/" class="page-footer__logo">

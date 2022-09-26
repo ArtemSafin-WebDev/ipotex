@@ -111,17 +111,18 @@
         padding: 0 0.7rem;
     }
 
-    &--green {
+    &:nth-of-type(2) {
         background-color: #d7ff64;
     }
 
-    &--violet {
+    &:nth-of-type(3) {
         background: #c8beff;
     }
 
-    &--cyan {
+    &:nth-of-type(4) {
         background: #8ef6e4;
     }
+
 }
 
 .intro__heading {
