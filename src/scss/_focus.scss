@@ -58,6 +58,7 @@
     height: 100%;
     border: 0.2rem solid #d7ff64;
     border-radius: 1rem;
+    pointer-events: none;
   }
 
   .focus__list-item:nth-child(4n + 2) & {
