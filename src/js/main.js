@@ -17,6 +17,7 @@ import cursor from './handMove';
 import header from './header';
 import sections from './sections';
 import tariffsSlider from "./tariffsSlider";
+import reviewsSlider from "./reviewsSlider";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -37,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
     header();
     sections();
     tariffsSlider();
+    reviewsSlider();
 
 });
 
