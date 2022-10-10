@@ -1,136 +1,177 @@
 .focus {
-    
-    margin-bottom: 9rem;
 
-    @include breakpoint(mobile) {
-        margin-bottom: 4rem;
-    }
+  margin-bottom: 9rem;
+
+  @include breakpoint(mobile) {
+    margin-bottom: 4rem;
+  }
 }
 
 .focus__heading {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 3.6rem;
-    line-height: 4rem;
-    margin-bottom: 4rem;
-    max-width: 56rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3.6rem;
+  line-height: 4rem;
+  margin-bottom: 4rem;
+  max-width: 56rem;
 
-    @include breakpoint(mobile) {
-        font-size: 2.3rem;
-        line-height: 2.7rem;
-        margin-bottom: 3rem;
-    }
+  @include breakpoint(mobile) {
+    font-size: 2.3rem;
+    line-height: 2.7rem;
+    margin-bottom: 3rem;
+  }
 }
 
 .focus__list {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-gap: 4rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-gap: 4rem;
 
-    @include breakpoint(mobile) {
-        grid-gap: 1.4rem;
-        grid-template-columns: minmax(0, 1fr);
-    }
+  @include breakpoint(mobile) {
+    grid-gap: 1.4rem;
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 
 .focus__list-item {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .focus__card {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  //border: 0.2rem solid #d7ff64;
+  border-radius: 1rem;
+  background-color: #fff;
+  overflow: hidden;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
     border: 0.2rem solid #d7ff64;
     border-radius: 1rem;
-    background-color: #fff;
-    overflow: hidden;
-    backface-visibility: hidden;
-    transform: translateZ(0);
+  }
 
-    .focus__list-item:nth-child(even) & {
-        border-color: #8ef6e4;
+  .focus__list-item:nth-child(4n + 2) & {
+
+
+    &::after {
+      border-color: #8ef6e4;
     }
+  }
+
+  .focus__list-item:nth-child(4n + 3) & {
+
+
+    &::after {
+      border-color: #C8BEFF;
+    }
+  }
+
+  .focus__list-item:nth-child(4n + 4) & {
+
+
+    &::after {
+      border-color: #FAC8FF;
+    }
+  }
 }
 
 .focus__card-top-row {
-    display: flex;
-    align-items: center;
-    background-color: #d7ff64;
-    padding: 3.2rem 5rem;
-    gap: 2rem;
+  display: flex;
+  align-items: center;
+  background-color: #d7ff64;
+  padding: 3.2rem 5rem;
+  gap: 2rem;
+  position: relative;
 
-    @include breakpoint(mobile) {
-        padding: 2rem;
-        gap: 1.5rem;
-    }
 
-    .focus__list-item:nth-child(even) & {
-        background-color: #8ef6e4;
-    }
+  @include breakpoint(mobile) {
+    padding: 2rem;
+    gap: 1.5rem;
+  }
+
+  .focus__list-item:nth-child(2) & {
+    background-color: #8ef6e4;
+  }
+
+  .focus__list-item:nth-child(3) & {
+    background: #C8BEFF;
+  }
+
+  .focus__list-item:nth-child(4) & {
+    background: #FAC8FF;
+  }
 }
 
 .focus__card-icon {
-    object-fit: contain;
-    flex-shrink: 0;
-    width: 6rem;
-    height: 6rem;
+  object-fit: contain;
+  flex-shrink: 0;
+  width: 6rem;
+  height: 6rem;
 
-    @include breakpoint(mobile) {
-        width: 3.4rem;
-        height: 3.4rem;
-    }
+  @include breakpoint(mobile) {
+    width: 3.4rem;
+    height: 3.4rem;
+  }
 }
 
 .focus__card-title {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 2.6rem;
-    line-height: 1.2;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.6rem;
+  line-height: 1.2;
 
-    @include breakpoint(mobile) {
-        font-size: 1.6rem;
-        line-height: 1.9rem;
-    }
+  @include breakpoint(mobile) {
+    font-size: 1.6rem;
+    line-height: 1.9rem;
+  }
 }
 
 .focus__card-content {
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
-    padding: 5rem;
-    padding-top: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  padding: 5rem;
+  padding-top: 3.5rem;
 
-    @include breakpoint(mobile) {
-        padding: 2rem;
-        padding-top: 1.4rem;
-    }
+  @include breakpoint(mobile) {
+    padding: 2rem;
+    padding-top: 1.4rem;
+  }
 }
 
 .focus__card-content-title {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 1.9rem;
-    line-height: 120%;
-    letter-spacing: -0.03em;
-    margin-bottom: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.9rem;
+  line-height: 120%;
+  letter-spacing: -0.03em;
+  margin-bottom: 2.5rem;
 
-    @include breakpoint(mobile) {
-        font-size: 1.4rem;
-        line-height: 1.8rem;
-        margin-bottom: 0.8rem;
-    }
+  @include breakpoint(mobile) {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    margin-bottom: 0.8rem;
+  }
 }
 
 .focus__card-content-text {
-    font-style: normal;
-    font-weight: 300;
-    font-size: 1.6rem;
-    line-height: 1.9rem;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
 
-    @include breakpoint(mobile) {
-        font-size: 1.4rem;
-        line-height: 1.8rem;
-    }
+  @include breakpoint(mobile) {
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
 }

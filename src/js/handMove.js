@@ -4,6 +4,8 @@ export default function cursor() {
     const cursorWrapper = document.querySelector('#hand-wrapper');
     const cursorImage = document.querySelector('#hand');
 
+    if (!cursorWrapper || !cursorImage) return;
+
     function followMouse(e) {
         e.stopPropagation();
 
