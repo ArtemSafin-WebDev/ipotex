@@ -53,6 +53,10 @@
     padding: 0.3rem 1.2rem;
     align-self: flex-start;
     margin-bottom: 1.2rem;
+
+    .numbers--green & {
+        background: #d7ff64;
+    }
 }
 
 .numbers__card-text {

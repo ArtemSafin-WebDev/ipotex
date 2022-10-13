@@ -1,88 +1,103 @@
 <!DOCTYPE html>
 <html lang="ru">
 
-<head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <meta name="format-detection" content="telephone=no">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css"/>
-    <title>
-        Главная страница
-    </title>
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="format-detection" content="telephone=no">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css" />
+        <title>
+            Главная страница
+        </title>
+    </head>
 
-<body class="no-touch" ontouchstart="">
-<div class="sprite" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;">
-    <?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 25 25" id="cross" xmlns="http://www.w3.org/2000/svg"><path d="M14.34 12.5L22 4.85a1.35 1.35 0 00.09-1.92l-.09-.1a1.38 1.38 0 00-1.93.09l-7.65 7.65-7.5-7.49A1.35 1.35 0 003 3l-.1.09A1.38 1.38 0 003 5l7.5 7.49L3 20a1.38 1.38 0 00-.09 1.93L3 22a1.35 1.35 0 001.92-.09l7.49-7.49 7.65 7.65a1.38 1.38 0 001.93.09l.09-.1a1.35 1.35 0 00-.08-1.91z"/></symbol><symbol viewBox="0 0 11 19" id="fb" xmlns="http://www.w3.org/2000/svg"><path d="M7.06 6.38V4.51c0-.84.19-1.26 1.49-1.26h1.64V.13H7.46C4.11.13 3 1.66 3 4.29v2.09H.81V9.5H3v9.38h4.06V9.5h2.76l.37-3.12z"/></symbol><symbol viewBox="0 0 14 20" id="ok" xmlns="http://www.w3.org/2000/svg"><path d="M12.83 10.74c-.28-.57-1.07-1.05-2.12-.24A6.84 6.84 0 017 11.64a6.84 6.84 0 01-3.71-1.14c-1-.81-1.84-.33-2.12.24-.5 1 .06 1.49 1.33 2.3A8.54 8.54 0 006 14.1l-.8.8-.03.1C4.06 16.07 3 17.14 2.25 17.88a1.14 1.14 0 000 1.62l.14.16a1.16 1.16 0 001.64 0l3-3c1.15 1.13 2.24 2.22 3 3a1.16 1.16 0 001.64 0l.13-.16a1.12 1.12 0 000-1.62l-3-3-.8-.79A8.35 8.35 0 0011.5 13c1.27-.77 1.83-1.26 1.33-2.26z"/><path d="M7 10.12a5.06 5.06 0 10-5.06-5.06A5.05 5.05 0 007 10.12zm0-7.55a2.49 2.49 0 11-2.5 2.49A2.5 2.5 0 017 2.57z"/></symbol><symbol id="slider-arrow-left" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><defs><style>.dcls-1{fill:#031c17}</style></defs><path class="dcls-1" d="M9.5.47c.39 0 .74.13 1.04.4l.87.82c.29.28.44.61.44 1s-.15.72-.44.99L8.02 6.9h8.16c.4 0 .73.14.98.41.25.27.38.6.38.99v1.4c0 .39-.13.72-.38.99s-.58.41-.98.41H8.01l3.39 3.22c.29.26.44.59.44.99s-.15.72-.44.98l-.87.82c-.29.28-.64.42-1.04.42s-.76-.14-1.05-.42L.9 9.98C.61 9.72.47 9.4.47 8.99s.14-.73.43-1L8.44.88c.3-.27.65-.4 1.05-.4z"/></symbol><symbol viewBox="0 0 18 18" id="slider-arrow-right" xmlns="http://www.w3.org/2000/svg"><path d="M8.5.47c-.39 0-.74.13-1.04.4l-.87.82c-.29.28-.44.61-.44 1s.15.72.44.99L9.98 6.9H1.83c-.4 0-.73.14-.98.41-.25.27-.38.6-.38.99v1.4c0 .39.13.72.38.99s.58.41.98.41h8.16L6.6 14.32c-.29.26-.44.59-.44.99s.15.72.44.98l.87.82c.29.28.64.42 1.04.42s.76-.14 1.05-.42l7.54-7.13c.29-.26.43-.58.43-.99s-.14-.73-.43-1L9.56.88c-.3-.27-.65-.4-1.05-.4z"/></symbol><symbol viewBox="0 0 18 15" id="twitter" xmlns="http://www.w3.org/2000/svg"><path d="M18 1.78a7.17 7.17 0 01-2.12.59A3.77 3.77 0 0017.5.28a7.33 7.33 0 01-2.34.92 3.66 3.66 0 00-2.7-1.2 3.74 3.74 0 00-3.69 3.79 3.55 3.55 0 00.1.86 10.45 10.45 0 01-7.62-4 3.94 3.94 0 00-.5 1.95A3.82 3.82 0 002.4 5.75a3.67 3.67 0 01-1.68-.47A3.78 3.78 0 003.69 9a3.93 3.93 0 01-1 .13A3.17 3.17 0 012 9.1a3.7 3.7 0 003.45 2.63 7.29 7.29 0 01-4.57 1.62 8.49 8.49 0 01-.88 0A10.3 10.3 0 005.66 15c6.79 0 10.51-5.77 10.51-10.77v-.49A7.63 7.63 0 0018 1.78z"/></symbol><symbol viewBox="0 0 20 12" id="vk" xmlns="http://www.w3.org/2000/svg"><path d="M17.54 7.6a8.51 8.51 0 011.92 2.22c.64 1.06-.7 1.14-.7 1.14h-2.58a1.81 1.81 0 01-1.28-.39c-1-.66-1.9-2.39-2.59-2.16s-.69 1.78-.69 1.78a.62.62 0 01-.16.39.65.65 0 01-.53.12H9.78A6.24 6.24 0 015 8.67C2.55 6.13.39 1.13.39 1.13S.27.83.4.66 1 .5 1 .5h2.73a.72.72 0 01.44.16.89.89 0 01.24.34 17.61 17.61 0 001 2.13c1.15 2 1.68 2.42 2.05 2.21.6-.31.43-2.81.43-2.81a2.76 2.76 0 00-.29-1.31 1.3 1.3 0 00-.82-.43c-.16 0 .1-.38.43-.55A6.58 6.58 0 019.62 0 4.85 4.85 0 0111 .13c1 .23.63 1.12.63 3.24 0 .69-.1 1.63.37 2 .21.14.73 0 2-2.17A17.63 17.63 0 0015.06.89a.89.89 0 01.25-.31 1 1 0 01.38-.08h2.9s.88-.1 1 .29-.33 1.38-1.52 3c-1.92 2.55-2.14 2.31-.53 3.81z" fill-rule="evenodd"/></symbol></svg></div>
+    <body class="no-touch" ontouchstart="">
+        <div class="sprite" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;">
+            <?xml version="1.0" encoding="utf-8"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol viewBox="0 0 25 25" id="cross" xmlns="http://www.w3.org/2000/svg"><path d="M14.34 12.5L22 4.85a1.35 1.35 0 00.09-1.92l-.09-.1a1.38 1.38 0 00-1.93.09l-7.65 7.65-7.5-7.49A1.35 1.35 0 003 3l-.1.09A1.38 1.38 0 003 5l7.5 7.49L3 20a1.38 1.38 0 00-.09 1.93L3 22a1.35 1.35 0 001.92-.09l7.49-7.49 7.65 7.65a1.38 1.38 0 001.93.09l.09-.1a1.35 1.35 0 00-.08-1.91z"/></symbol><symbol viewBox="0 0 11 19" id="fb" xmlns="http://www.w3.org/2000/svg"><path d="M7.06 6.38V4.51c0-.84.19-1.26 1.49-1.26h1.64V.13H7.46C4.11.13 3 1.66 3 4.29v2.09H.81V9.5H3v9.38h4.06V9.5h2.76l.37-3.12z"/></symbol><symbol viewBox="0 0 14 20" id="ok" xmlns="http://www.w3.org/2000/svg"><path d="M12.83 10.74c-.28-.57-1.07-1.05-2.12-.24A6.84 6.84 0 017 11.64a6.84 6.84 0 01-3.71-1.14c-1-.81-1.84-.33-2.12.24-.5 1 .06 1.49 1.33 2.3A8.54 8.54 0 006 14.1l-.8.8-.03.1C4.06 16.07 3 17.14 2.25 17.88a1.14 1.14 0 000 1.62l.14.16a1.16 1.16 0 001.64 0l3-3c1.15 1.13 2.24 2.22 3 3a1.16 1.16 0 001.64 0l.13-.16a1.12 1.12 0 000-1.62l-3-3-.8-.79A8.35 8.35 0 0011.5 13c1.27-.77 1.83-1.26 1.33-2.26z"/><path d="M7 10.12a5.06 5.06 0 10-5.06-5.06A5.05 5.05 0 007 10.12zm0-7.55a2.49 2.49 0 11-2.5 2.49A2.5 2.5 0 017 2.57z"/></symbol><symbol id="slider-arrow-left" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><defs><style>.dcls-1{fill:#031c17}</style></defs><path class="dcls-1" d="M9.5.47c.39 0 .74.13 1.04.4l.87.82c.29.28.44.61.44 1s-.15.72-.44.99L8.02 6.9h8.16c.4 0 .73.14.98.41.25.27.38.6.38.99v1.4c0 .39-.13.72-.38.99s-.58.41-.98.41H8.01l3.39 3.22c.29.26.44.59.44.99s-.15.72-.44.98l-.87.82c-.29.28-.64.42-1.04.42s-.76-.14-1.05-.42L.9 9.98C.61 9.72.47 9.4.47 8.99s.14-.73.43-1L8.44.88c.3-.27.65-.4 1.05-.4z"/></symbol><symbol viewBox="0 0 18 18" id="slider-arrow-right" xmlns="http://www.w3.org/2000/svg"><path d="M8.5.47c-.39 0-.74.13-1.04.4l-.87.82c-.29.28-.44.61-.44 1s.15.72.44.99L9.98 6.9H1.83c-.4 0-.73.14-.98.41-.25.27-.38.6-.38.99v1.4c0 .39.13.72.38.99s.58.41.98.41h8.16L6.6 14.32c-.29.26-.44.59-.44.99s.15.72.44.98l.87.82c.29.28.64.42 1.04.42s.76-.14 1.05-.42l7.54-7.13c.29-.26.43-.58.43-.99s-.14-.73-.43-1L9.56.88c-.3-.27-.65-.4-1.05-.4z"/></symbol><symbol viewBox="0 0 18 15" id="twitter" xmlns="http://www.w3.org/2000/svg"><path d="M18 1.78a7.17 7.17 0 01-2.12.59A3.77 3.77 0 0017.5.28a7.33 7.33 0 01-2.34.92 3.66 3.66 0 00-2.7-1.2 3.74 3.74 0 00-3.69 3.79 3.55 3.55 0 00.1.86 10.45 10.45 0 01-7.62-4 3.94 3.94 0 00-.5 1.95A3.82 3.82 0 002.4 5.75a3.67 3.67 0 01-1.68-.47A3.78 3.78 0 003.69 9a3.93 3.93 0 01-1 .13A3.17 3.17 0 012 9.1a3.7 3.7 0 003.45 2.63 7.29 7.29 0 01-4.57 1.62 8.49 8.49 0 01-.88 0A10.3 10.3 0 005.66 15c6.79 0 10.51-5.77 10.51-10.77v-.49A7.63 7.63 0 0018 1.78z"/></symbol><symbol viewBox="0 0 20 12" id="vk" xmlns="http://www.w3.org/2000/svg"><path d="M17.54 7.6a8.51 8.51 0 011.92 2.22c.64 1.06-.7 1.14-.7 1.14h-2.58a1.81 1.81 0 01-1.28-.39c-1-.66-1.9-2.39-2.59-2.16s-.69 1.78-.69 1.78a.62.62 0 01-.16.39.65.65 0 01-.53.12H9.78A6.24 6.24 0 015 8.67C2.55 6.13.39 1.13.39 1.13S.27.83.4.66 1 .5 1 .5h2.73a.72.72 0 01.44.16.89.89 0 01.24.34 17.61 17.61 0 001 2.13c1.15 2 1.68 2.42 2.05 2.21.6-.31.43-2.81.43-2.81a2.76 2.76 0 00-.29-1.31 1.3 1.3 0 00-.82-.43c-.16 0 .1-.38.43-.55A6.58 6.58 0 019.62 0 4.85 4.85 0 0111 .13c1 .23.63 1.12.63 3.24 0 .69-.1 1.63.37 2 .21.14.73 0 2-2.17A17.63 17.63 0 0015.06.89a.89.89 0 01.25-.31 1 1 0 01.38-.08h2.9s.88-.1 1 .29-.33 1.38-1.52 3c-1.92 2.55-2.14 2.31-.53 3.81z" fill-rule="evenodd"/></symbol></svg>        </div>
 
-<div class="page-content">
-    <header class="page-header">
-        <div class="container">
-            <div class="page-header__row">
-                <a href="/" class="page-header__logo">
-                    <img src="img/header-logo.svg" alt="" class="page-header__logo-image">
-                </a>
-                <div class="page-header__menu">
-                    <nav class="page-header__nav">
-                        <ul class="page-header__nav-list">
-                            <li class="page-header__nav-list-item">
-                                <a href="#service" class="page-header__nav-link">
-                                    Как это работает
-                                </a>
-                            </li>
-                            <li class="page-header__nav-list-item">
-                                <a href="#focus" class="page-header__nav-link">
-                                    Для кого
-                                </a>
-                            </li>
-                            <li class="page-header__nav-list-item">
-                                <a href="#monitoring" class="page-header__nav-link">
-                                    Партнеры
-                                </a>
-                            </li>
-                            <li class="page-header__nav-list-item">
-                                <a href="#clients" class="page-header__nav-link">
-                                    Банки-партнеры
-                                </a>
-                            </li>
-                            <li class="page-header__nav-list-item">
-                                <a href="#about" class="page-header__nav-link">
-                                    О команде
-                                </a>
-                            </li>
-                            <li class="page-header__nav-list-item">
-                                <a href="#protect" class="page-header__nav-link">
-                                    Безопасность
-                                </a>
-                            </li>
-                            <li class="page-header__nav-list-item">
-                                <a href="#footer" class="page-header__nav-link">
-                                    Контакты
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="page-header__buttons">
-                        <a href="#" class="page-header__button">
-                            Войти
+        <div class="page-content">
+            <header class="page-header">
+                <div class="container">
+                    <div class="page-header__row">
+                        <a href="/" class="page-header__logo">
+                            <img src="img/header-logo-2.svg" alt="" class="page-header__logo-image">
                         </a>
-                        <a href="#callback-modal" class="page-header__button page-header__button--violet">
-                            Хочу демо-доступ
-                        </a>
+                        <div class="page-header__menu">
+                            <nav class="page-header__nav">
+                                <ul class="page-header__nav-list">
+                                    <li class="page-header__nav-list-item">
+                                        <a href="#service" class="page-header__nav-link">
+                                            О сервисе
+            
+                                        </a>
+                                    </li>
+                                    <li class="page-header__nav-list-item">
+                                        <a href="#focus" class="page-header__nav-link">
+                                            Виды операций
+                                        </a>
+                                    </li>
+                                    <li class="page-header__nav-list-item">
+                                        <a href="#monitoring" class="page-header__nav-link">
+                                            Для кого
+            
+                                        </a>
+                                    </li>
+                                    <li class="page-header__nav-list-item">
+                                        <a href="#clients" class="page-header__nav-link">
+                                            Как это работает
+                                        </a>
+                                    </li>
+                                    <li class="page-header__nav-list-item">
+                                        <a href="#about" class="page-header__nav-link">
+                                            Тарифы
+            
+                                        </a>
+                                    </li>
+                                    <li class="page-header__nav-list-item">
+                                        <a href="#protect" class="page-header__nav-link">
+                                            Клиенты
+            
+                                        </a>
+                                    </li>
+                                    <li class="page-header__nav-list-item">
+                                        <a href="#footer" class="page-header__nav-link">
+                                            О нас
+            
+                                        </a>
+                                    </li>
+                                    <li class="page-header__nav-list-item">
+                                        <a href="#footer" class="page-header__nav-link">
+                                            Безопасность
+                                        </a>
+                                    </li>
+                                    <li class="page-header__nav-list-item">
+                                        <a href="#footer" class="page-header__nav-link">
+                                            Контакты
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="page-header__buttons">
+                                <a href="#" class="page-header__button">
+                                    Войти
+                                </a>
+                                <a href="#callback-modal" class="page-header__button page-header__button--violet">
+                                    Хочу демо-доступ
+                                </a>
+                            </div>
+                        </div>
+                        <button class="page-header__burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
                     </div>
                 </div>
-                <button class="page-header__burger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </button>
-            </div>
-        </div>
-    </header>    <main class="page-main">
+            </header>            <main class="page-main">
 
 
         <section class="service service--no-background js-service" id="service">
@@ -106,9 +121,9 @@
                                         <div class="service__slider-card-image-wrapper">
                                             <img src="img/service/1.png" alt="" class="service__slider-card-image">
                                             <div class="service__slider-card-label">
-                                        <span>
-                                            Зарабатывайте<br>на регистрации
-                                        </span>
+                                                <span>
+                                                    Зарабатывайте<br>на регистрации
+                                                </span>
 
                                             </div>
                                         </div>
@@ -134,9 +149,9 @@
                                         <div class="service__slider-card-image-wrapper">
                                             <img src="img/service/2.png" alt="" class="service__slider-card-image">
                                             <div class="service__slider-card-label">
-                                        <span>
-                                           Проводите полностью<br> удаленные сделки
-                                        </span>
+                                                <span>
+                                                    Проводите полностью<br> удаленные сделки
+                                                </span>
                                             </div>
                                         </div>
                                         <ul class="service__slider-card-list">
@@ -158,9 +173,9 @@
                                         <div class="service__slider-card-image-wrapper">
                                             <img src="img/service/3.png" alt="" class="service__slider-card-image">
                                             <div class="service__slider-card-label">
-                                        <span>
-                                            Работайте<br>с удобством
-                                        </span>
+                                                <span>
+                                                    Работайте<br>с удобством
+                                                </span>
                                             </div>
                                         </div>
                                         <ul class="service__slider-card-list">
@@ -182,6 +197,34 @@
                                         </ul>
                                     </div>
                                 </div>
+                                <div class="swiper-slide">
+                                    <div class="service__slider-card">
+                                        <div class="service__slider-card-image-wrapper">
+                                            <img src="img/service/4.png" alt="" class="service__slider-card-image">
+                                            <div class="service__slider-card-label">
+                                                <span>
+                                                    Контролируйте<br> весь процесс
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <ul class="service__slider-card-list">
+                                            <li class="service__slider-card-list-item">
+                                                Управляйте филиальной сетью аккаунтов.
+                                            </li>
+                                            <li class="service__slider-card-list-item">
+                                                Контролируйте статус заявок в личном кабинете.
+
+                                            </li>
+                                            <li class="service__slider-card-list-item">
+                                                Интегрируйте решение с вашей CRM-системой
+
+                                            </li>
+                                            <li class="service__slider-card-list-item">
+                                                Храните историю и документы в личном кабинете
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
@@ -191,40 +234,7 @@
         </section>
 
 
-        <section class="subscribe">
-            <div class="container">
-                <div class="subscribe__content">
-                    <div class="subscribe__text-content">
-                        <h2 class="subscribe__heading">
-                            Не ждите, что ситуация на рынке станет лучше, зарабатывайте уже сегодня
-                        </h2>
-                        <div class="subscribe__text">
-                            Оставьте контакты и получите<br> выгодное решение
-                        </div>
-                    </div>
-                    <form action="/" method="POST" class="subscribe__form" data-need-validation="">
-                        <div class="subscribe__form-fields">
-                            <div class="subscribe__form-field">
-                                <input type="text" name="name" class="subscribe__form-input" placeholder="Имя"
-                                       required="">
-                            </div>
-                            <div class="subscribe__form-field">
-                                <input type="tel" name="phone" class="subscribe__form-input js-phone-input"
-                                       placeholder="8 (987) 650-43-21" required="" data-parsley-phone="">
-                            </div>
-                        </div>
-                        <div class="subscribe__form-controls">
-                            <div class="subscribe__form-policy">
-                                Нажимая на кнопку, я соглашаюсь с <a href="#">политикой&nbsp;конфиденциальности</a>
-                            </div>
-                            <button class="subscribe__form-submit" type="submit">
-                                Отправить
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
+
         <section class="operations">
             <div class="container">
                 <div class="operations__content">
@@ -402,6 +412,40 @@
                         </div>
                     </li>
                 </ul>
+            </div>
+        </section>
+        <section class="subscribe">
+            <div class="container">
+                <div class="subscribe__content">
+                    <div class="subscribe__text-content">
+                        <h2 class="subscribe__heading">
+                            Не ждите, что ситуация на рынке станет лучше, зарабатывайте уже сегодня
+                        </h2>
+                        <div class="subscribe__text">
+                            Оставьте контакты и получите<br> выгодное решение
+                        </div>
+                    </div>
+                    <form action="/" method="POST" class="subscribe__form" data-need-validation="">
+                        <div class="subscribe__form-fields">
+                            <div class="subscribe__form-field">
+                                <input type="text" name="name" class="subscribe__form-input" placeholder="Имя"
+                                    required="">
+                            </div>
+                            <div class="subscribe__form-field">
+                                <input type="tel" name="phone" class="subscribe__form-input js-phone-input"
+                                    placeholder="8 (987) 650-43-21" required="" data-parsley-phone="">
+                            </div>
+                        </div>
+                        <div class="subscribe__form-controls">
+                            <div class="subscribe__form-policy">
+                                Нажимая на кнопку, я соглашаюсь с <a href="#">политикой&nbsp;конфиденциальности</a>
+                            </div>
+                            <button class="subscribe__form-submit" type="submit">
+                                Отправить
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
 
@@ -605,7 +649,7 @@
                                                 Создание филиальных инстансов
                                             </li>
                                         </ul>
-                                        <a href="#" class="tariffs__card-link">
+                                        <a href="#callback-modal" class="tariffs__card-link">
                                             Мне подходит
                                         </a>
                                         <div class="tariffs__card-price">
@@ -671,7 +715,7 @@
                                                 Создание филиальных инстансов
                                             </li>
                                         </ul>
-                                        <a href="#" class="tariffs__card-link">
+                                        <a href="#callback-modal" class="tariffs__card-link">
                                             Мне подходит
                                         </a>
                                         <div class="tariffs__card-price">
@@ -726,7 +770,7 @@
                                             </li>
 
                                         </ul>
-                                        <a href="#" class="tariffs__card-link">
+                                        <a href="#callback-modal" class="tariffs__card-link">
                                             Мне подходит
                                         </a>
                                         <div class="tariffs__card-price">
@@ -776,7 +820,7 @@
                                         покупке квартиры на первичном рынке.
                                     </h3>
                                     <div class="reviews__slider-card-text">
-                                        Вместо четырёх этапов клиент проходит через два: выбирает квартиру у застройщика
+                                        Вместо четырёх этапов клиент проходит через два: выбирает квартируу застройщика
                                         и подписывает договор участия в долевом строительстве, а затем в банке
                                         подписывает все документы и отправляет в Росреестр на регистрацию
                                     </div>
@@ -804,7 +848,7 @@
                                         покупке квартиры на первичном рынке.
                                     </h3>
                                     <div class="reviews__slider-card-text">
-                                        Вместо четырёх этапов клиент проходит через два: выбирает квартиру у застройщика
+                                        Вместо четырёх этапов клиент проходит через два: выбирает квартируу застройщика
                                         и подписывает договор участия в долевом строительстве, а затем в банке
                                         подписывает все документы и отправляет в Росреестр на регистрацию
                                     </div>
@@ -945,19 +989,19 @@
                             <li class="about__team-list-item">
                                 <div class="about__team-card">
                                     <div class="about__team-card-image-container">
-                                        <img src="img/team/3.jpg" alt="" class="about__team-card-image">
+                                        <img src="img/team/2.jpg" alt="" class="about__team-card-image">
                                     </div>
                                     <div class="about__team-card-role">
-                                        CTO
+                                        Product manager
                                     </div>
                                     <h3 class="about__team-card-title">
-                                        Игорь Пастухов
+                                        Лиля Бадретдинова
                                     </h3>
                                     <div class="about__team-card-label">
-                                        20 лет в IT
+                                        5 на рынке ЭР
                                     </div>
                                     <div class="about__team-card-text">
-                                        Построение IT-инфраструктурыи разработка ПО.
+                                        Эксперт по электронной регистраци - знает все юридические нюансы.
                                     </div>
                                     <a href="#" class="about__team-card-link">
                                         Читать полностью
@@ -996,6 +1040,58 @@
                         </ul>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="numbers numbers--green">
+            <div class="container">
+                <div class="numbers__text">
+                    Благодаря нашим технологиям сегодня можно в одном окне подобрать актуальные ипотечные программы и
+                    субсидированные ставки, не собирая их по чатам в ватсап или телеграм. А еще можно провести сделку
+                    купли-продажи квартиры из любой точки мира — понадобится лишь загранпаспорт.
+                </div>
+                <ul class="numbers__list">
+                    <li class="numbers__list-item">
+                        <div class="numbers__card">
+                            <h3 class="numbers__card-title">
+                                15 000+
+                            </h3>
+                            <div class="numbers__card-text">
+                                транзакций провели через наш сервис
+                            </div>
+                        </div>
+                    </li>
+                    <li class="numbers__list-item">
+                        <div class="numbers__card">
+                            <h3 class="numbers__card-title">
+                                В 20 регионах
+                            </h3>
+                            <div class="numbers__card-text">
+                                РФ пользуются нашими продуктами
+                            </div>
+                        </div>
+                    </li>
+                    <li class="numbers__list-item">
+                        <div class="numbers__card">
+                            <h3 class="numbers__card-title">
+                                15 лет
+                            </h3>
+                            <div class="numbers__card-text">
+                                опыта в недвижимости
+                            </div>
+                        </div>
+                    </li>
+                    <li class="numbers__list-item">
+                        <div class="numbers__card">
+                            <h3 class="numbers__card-title">
+                                90%
+                            </h3>
+                            <div class="numbers__card-text">
+                                застройщиков РТ работают с нами
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
         <section class="details">
@@ -1124,20 +1220,19 @@
                             <div class="demo__form-fields">
                                 <div class="demo__form-field">
                                     <input type="text" name="name" class="demo__form-input" required=""
-                                           placeholder="Имя"
-                                           required="">
+                                        placeholder="Имя" required="">
                                 </div>
                                 <div class="demo__form-field">
                                     <input type="tel" name="phone" class="demo__form-input js-phone-input" required=""
-                                           placeholder="Телефон" required="">
+                                        placeholder="Телефон" required="">
                                 </div>
                                 <div class="demo__form-field">
                                     <input type="text" name="company" class="demo__form-input" required=""
-                                           placeholder="Компания" required="">
+                                        placeholder="Компания" required="">
                                 </div>
                                 <div class="demo__form-field">
                                     <textarea name="comment" class="demo__form-input"
-                                              placeholder="Комментарий"></textarea>
+                                        placeholder="Комментарий"></textarea>
                                 </div>
                             </div>
                             <div class="demo__form-controls">
@@ -1167,283 +1262,283 @@
         </section>
 
 
-    </main>
-    <footer class="page-footer" id="footer">
-        <div class="container">
-            <div class="page-footer__top-row">
-                <a href="/" class="page-footer__logo">
-                    <img src="img/footer-logo.svg" alt="" class="page-footer__logo-image">
-                </a>
-                <ul class="page-footer__companies-list">
-                    <li class="page-footer__companies-list-item">
-                        <div class="page-footer__companies-card">
-                            <h4 class="page-footer__companies-card-title">
-                                Сервис разработан компанией
-                            </h4>
-                            <img src="img/footer-ipotex.svg" alt="" class="page-footer__companies-card-image">
-                        </div>
-                    </li>
-                    <li class="page-footer__companies-list-item">
-                        <div class="page-footer__companies-card">
-                            <h4 class="page-footer__companies-card-title">
-                                Резидент ОЭЗ Иннополис
-                            </h4>
-                            <img src="img/footer-innopolis.png" alt="" class="page-footer__companies-card-image">
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="page-footer__middle-row">
-                <nav class="page-footer__nav">
-                    <ul class="page-footer__nav-list">
-                        <li class="page-footer__nav-list-item">
-                            <a href="#" class="page-footer__nav-link">
-                                Как это работает?
-                            </a>
-                        </li>
-                        <li class="page-footer__nav-list-item">
-                            <a href="#" class="page-footer__nav-link">
-                                Для кого?
-                            </a>
-                        </li>
-                        <li class="page-footer__nav-list-item">
-                            <a href="#" class="page-footer__nav-link">
-                                Партнеры
-                            </a>
-                        </li>
-                        <li class="page-footer__nav-list-item">
-                            <a href="#" class="page-footer__nav-link">
-                                Банки-партнеры
-                            </a>
-                        </li>
-                        <li class="page-footer__nav-list-item">
-                            <a href="#" class="page-footer__nav-link">
-                                О команде
-                            </a>
-                        </li>
-                        <li class="page-footer__nav-list-item">
-                            <a href="#" class="page-footer__nav-link">
-                                Безопасность
-                            </a>
-                        </li>
-                        <li class="page-footer__nav-list-item">
-                            <a href="#" class="page-footer__nav-link">
-                                Контакты
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="page-footer__contacts">
-                    <div class="page-footer__contacts-card page-footer__contacts-card--support">
-                        <h4 class="page-footer__contacts-card-title">
-                            Техподдержка
-                        </h4>
-                        <div class="page-footer__contacts-card-links">
-                            <a href="mailto:s.ipoteka@ipoteh.ru"
-                                class="page-footer__contacts-card-link page-footer__contacts-card-link--underlined">
-                                <span class="page-footer__contacts-card-link-text">
-                                    s.ipoteka@ipoteh.ru
-                                </span>
-    
-                            </a>
-                            <a href="tel:88435983377" class="page-footer__contacts-card-link">
-                                <span class="page-footer__contacts-card-link-text">
-                                    8 (843) 598 33 77
-                                </span>
-    
-                            </a>
-                        </div>
-                    </div>
-                    <div class="page-footer__contacts-card page-footer__contacts-card--address">
-                        <h4 class="page-footer__contacts-card-title">
-                            Адрес
-                        </h4>
-                        <div class="page-footer__contacts-card-address">
-                            г. Иннополис, ул.<br> Университетская,<br>д. 7, помещение № 68, 420500
-    
-                        </div>
-                    </div>
-                    <div class="page-footer__our-products">
-                        <h4 class="page-footer__our-products-title">
-                            Наши продукты
-                        </h4>
-                        <a href="#" class="page-footer__our-products-link" target="_blank">
-                            <img src="img/safe-deal-logo.svg" alt="" class="page-footer__our-products-link-image">
+            </main>
+            <footer class="page-footer" id="footer">
+                <div class="container">
+                    <div class="page-footer__top-row">
+                        <a href="/" class="page-footer__logo">
+                            <img src="img/safe-deal-logo.svg" alt="" class="page-footer__logo-image">
                         </a>
+                        <ul class="page-footer__companies-list">
+                            <li class="page-footer__companies-list-item">
+                                <div class="page-footer__companies-card">
+                                    <h4 class="page-footer__companies-card-title">
+                                        Сервис разработан компанией
+                                    </h4>
+                                    <img src="img/footer-ipotex.svg" alt="" class="page-footer__companies-card-image">
+                                </div>
+                            </li>
+                            <li class="page-footer__companies-list-item">
+                                <div class="page-footer__companies-card">
+                                    <h4 class="page-footer__companies-card-title">
+                                        Резидент ОЭЗ Иннополис
+                                    </h4>
+                                    <img src="img/footer-innopolis.png" alt="" class="page-footer__companies-card-image">
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-    
-                    <div class="page-footer__contacts-card page-footer__contacts-card--partnership">
-                        <h4 class="page-footer__contacts-card-title">
-                            Партнерство
-                        </h4>
-                        <div class="page-footer__contacts-card-links">
-                            <a href="mailto:ipoteka@ipoteh.ru"
-                                class="page-footer__contacts-card-link page-footer__contacts-card-link--underlined">
-                                <span class="page-footer__contacts-card-link-text">
-                                    ipoteka@ipoteh.ru
-                                </span>
-    
-                            </a>
-                        </div>
-                    </div>
-                    <div class="page-footer__contacts-card page-footer__contacts-card--telegram">
-                        <h4 class="page-footer__contacts-card-title">
-                            Следите за обновлениями
-                        </h4>
-                        <div class="page-footer__contacts-card-links">
-                            <a href="#" class="page-footer__contacts-card-link" target="_blank">
-                                <img src="img/telegram.svg" alt="" class="page-footer__contacts-card-link-icon">
-                                <span class="page-footer__contacts-card-link-text">
-                                    @ipoteh
-                                </span>
-    
-                            </a>
-                        </div>
-                    </div>
-                    <div class="page-footer__contacts-card page-footer__contacts-card--hh">
-                        <h4 class="page-footer__contacts-card-title">
-                            Наши вакансии тут
-                        </h4>
-                        <div class="page-footer__contacts-card-links">
-                            <a href="#"
-                                class="page-footer__contacts-card-link page-footer__contacts-card-link--small page-footer__contacts-card-link--underlined"
-                                target="_blank">
-                                <img src="img/hh.svg" alt="" class="page-footer__contacts-card-link-icon">
-                                <span class="page-footer__contacts-card-link-text">
-                                    Перейти на hh.ru
-                                </span>
-    
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="page-footer__bottom-row">
-                <div class="page-footer__copyright">
-                    Все права защищены<br>
-                    «ОНЛАЙНСДЕЛКА» 2022
-                </div>
-                <a href="#" class="page-footer__policy" target="_blank">
-                    <span class="page-footer__policy-text">
-                        Политика обработки персональных данных
-                    </span>
-                </a>
-                <div class="page-footer__offer">
-                    Сайт не является публичной офертой, определяемой положениями статьи 437 ГК РФ
-                </div>
-            </div>
-        </div>
-    </footer>    <div class="modal js-modal" id="callback-modal">
-        <div class="modal__inner">
-            <button class="modal__close js-close-modal">
-                <svg width="14" height="14" aria-hidden="true" class="icon-cross">
-                    <use xlink:href="#cross"></use>
-                </svg>
-            </button>
-            <h3 class="modal__heading">
-                Познакомьтесь с сервисом за 1 час
-            </h3>
-            <div class="modal__text">
-                Оставьте контакты и мы покажем наш калькулятор в деле
-            </div>
-            <form action="/" method="POST" class="modal__form" data-need-validation="">
-                <div class="modal__form-fields">
-                    <div class="modal__form-field">
-                        <input type="text" class="modal__form-input" name="name" placeholder="Имя" required="">
-                    </div>
-                    <div class="modal__form-field">
-                        <input type="tel" class="modal__form-input js-phone-input" name="phone" placeholder="Телефон"
-                            required="" data-parsley-phone="">
-                    </div>
-                    <div class="modal__form-field">
-                        <input type="text" class="modal__form-input" name="company" placeholder="Компания" required="">
-                    </div>
-                    <div class="modal__form-field">
-                        <textarea name="comment" class="modal__form-input" placeholder="Комментарий"></textarea>
-                    </div>
-                </div>
-                <div class="modal__form-controls">
-                    <button class="modal__form-submit" type="submit">
-                        Хочу демо-доступ
-                    </button>
-                    <div class="modal__form-policy">
-                        Нажимая на кнопку, я соглашаюсь с <a href="#">политикой&nbsp;конфиденциальности</a>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-    <div class="modal js-modal" id="bank-modal">
-        <div class="modal__inner">
-            <button class="modal__close js-close-modal">
-                <svg width="14" height="14" aria-hidden="true" class="icon-cross">
-                    <use xlink:href="#cross"></use>
-                </svg>
-            </button>
-            <h3 class="modal__heading">
-                Какой банк вы бы хотели видеть?
-            </h3>
-            <div class="modal__text">
-                Оставьте контактные данные и мы подарим вам бонус
-            </div>
-            <form action="/" method="POST" class="modal__form" data-need-validation="">
-                <div class="modal__form-fields">
-                    <div class="modal__form-field">
-                        <input type="text" class="modal__form-input" name="name" placeholder="Имя" required="">
-                    </div>
-                    <div class="modal__form-field">
-                        <input type="tel" class="modal__form-input js-phone-input" name="phone" placeholder="Телефон"
-                            required="" data-parsley-phone="">
-                    </div>
-                    <div class="modal__form-field">
-                        <textarea name="comment" class="modal__form-input" placeholder="Комментарий"></textarea>
-                    </div>
-                </div>
-                <div class="modal__form-controls">
-                    <button class="modal__form-submit" type="submit">
-                        Отправить
-                    </button>
-                    <div class="modal__form-policy">
-                        Нажимая на кнопку, я соглашаюсь с <a href="#">политикой&nbsp;конфиденциальности</a>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>    <style>
-        .ie-placeholder {
-            z-index: 4000;
-            position: fixed;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: #202020;
-            color: white;
-            display: flex;
-            flex-direction: column;
-            text-align: center;
+                    <div class="page-footer__middle-row">
+                        <nav class="page-footer__nav">
+                            <ul class="page-footer__nav-list">
+                                <li class="page-footer__nav-list-item">
+                                    <a href="#" class="page-footer__nav-link">
+                                        Как это работает?
+                                    </a>
+                                </li>
+                                <li class="page-footer__nav-list-item">
+                                    <a href="#" class="page-footer__nav-link">
+                                        Для кого?
+                                    </a>
+                                </li>
+                                <li class="page-footer__nav-list-item">
+                                    <a href="#" class="page-footer__nav-link">
+                                        Партнеры
+                                    </a>
+                                </li>
+                                <li class="page-footer__nav-list-item">
+                                    <a href="#" class="page-footer__nav-link">
+                                        Банки-партнеры
+                                    </a>
+                                </li>
+                                <li class="page-footer__nav-list-item">
+                                    <a href="#" class="page-footer__nav-link">
+                                        О команде
+                                    </a>
+                                </li>
+                                <li class="page-footer__nav-list-item">
+                                    <a href="#" class="page-footer__nav-link">
+                                        Безопасность
+                                    </a>
+                                </li>
+                                <li class="page-footer__nav-list-item">
+                                    <a href="#" class="page-footer__nav-link">
+                                        Контакты
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="page-footer__contacts">
+                            <div class="page-footer__contacts-card page-footer__contacts-card--support">
+                                <h4 class="page-footer__contacts-card-title">
+                                    Техподдержка
+                                </h4>
+                                <div class="page-footer__contacts-card-links">
+                                    <a href="mailto:s.ipoteka@ipoteh.ru"
+                                        class="page-footer__contacts-card-link page-footer__contacts-card-link--underlined">
+                                        <span class="page-footer__contacts-card-link-text">
+                                            s.ipoteka@ipoteh.ru
+                                        </span>
             
-        }
-        .ie-placeholder__message {
-            font-size: 2rem;
-            line-height: 1.2;
-            font-weight: 500;
-            margin: auto;
-        }
-        @supports (display: grid) {
-            .ie-placeholder {
-                display: none;
-            }
-        }
-    </style>
-    <div class="ie-placeholder">
-        <div class="ie-placeholder__message">
-            Извините, ваш браузер не поддерживается
+                                    </a>
+                                    <a href="tel:88435983377" class="page-footer__contacts-card-link">
+                                        <span class="page-footer__contacts-card-link-text">
+                                            8 (843) 598 33 77
+                                        </span>
+            
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="page-footer__contacts-card page-footer__contacts-card--address">
+                                <h4 class="page-footer__contacts-card-title">
+                                    Адрес
+                                </h4>
+                                <div class="page-footer__contacts-card-address">
+                                    г. Иннополис, ул.<br> Университетская,<br>д. 7, помещение № 68, 420500
+            
+                                </div>
+                            </div>
+                            <div class="page-footer__our-products">
+                                <h4 class="page-footer__our-products-title">
+                                    Наши продукты
+                                </h4>
+                                <a href="#" class="page-footer__our-products-link" target="_blank">
+                                    <img src="img/footer-logo.svg" alt="" class="page-footer__our-products-link-image">
+                                </a>
+                            </div>
+            
+                            <div class="page-footer__contacts-card page-footer__contacts-card--partnership">
+                                <h4 class="page-footer__contacts-card-title">
+                                    Партнерство
+                                </h4>
+                                <div class="page-footer__contacts-card-links">
+                                    <a href="mailto:ipoteka@ipoteh.ru"
+                                        class="page-footer__contacts-card-link page-footer__contacts-card-link--underlined">
+                                        <span class="page-footer__contacts-card-link-text">
+                                            ipoteka@ipoteh.ru
+                                        </span>
+            
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="page-footer__contacts-card page-footer__contacts-card--telegram">
+                                <h4 class="page-footer__contacts-card-title">
+                                    Следите за обновлениями
+                                </h4>
+                                <div class="page-footer__contacts-card-links">
+                                    <a href="#" class="page-footer__contacts-card-link" target="_blank">
+                                        <img src="img/telegram.svg" alt="" class="page-footer__contacts-card-link-icon">
+                                        <span class="page-footer__contacts-card-link-text">
+                                            @ipoteh
+                                        </span>
+            
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="page-footer__contacts-card page-footer__contacts-card--hh">
+                                <h4 class="page-footer__contacts-card-title">
+                                    Наши вакансии тут
+                                </h4>
+                                <div class="page-footer__contacts-card-links">
+                                    <a href="#"
+                                        class="page-footer__contacts-card-link page-footer__contacts-card-link--small page-footer__contacts-card-link--underlined"
+                                        target="_blank">
+                                        <img src="img/hh.svg" alt="" class="page-footer__contacts-card-link-icon">
+                                        <span class="page-footer__contacts-card-link-text">
+                                            Перейти на hh.ru
+                                        </span>
+            
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page-footer__bottom-row">
+                        <div class="page-footer__copyright">
+                            Все права защищены<br>
+                            «ОНЛАЙНСДЕЛКА» 2022
+                        </div>
+                        <a href="#" class="page-footer__policy" target="_blank">
+                            <span class="page-footer__policy-text">
+                                Политика обработки персональных данных
+                            </span>
+                        </a>
+                        <div class="page-footer__offer">
+                            Сайт не является публичной офертой, определяемой положениями статьи 437 ГК РФ
+                        </div>
+                    </div>
+                </div>
+            </footer>            <div class="modal js-modal" id="callback-modal">
+                <div class="modal__inner">
+                    <button class="modal__close js-close-modal">
+                        <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                            <use xlink:href="#cross"></use>
+                        </svg>
+                    </button>
+                    <h3 class="modal__heading">
+                        Познакомьтесь с сервисом за 1 час
+                    </h3>
+                    <div class="modal__text">
+                        Оставьте контакты и мы покажем наш калькулятор в деле
+                    </div>
+                    <form action="/" method="POST" class="modal__form" data-need-validation="">
+                        <div class="modal__form-fields">
+                            <div class="modal__form-field">
+                                <input type="text" class="modal__form-input" name="name" placeholder="Имя" required="">
+                            </div>
+                            <div class="modal__form-field">
+                                <input type="tel" class="modal__form-input js-phone-input" name="phone" placeholder="Телефон"
+                                    required="" data-parsley-phone="">
+                            </div>
+                            <div class="modal__form-field">
+                                <input type="text" class="modal__form-input" name="company" placeholder="Компания" required="">
+                            </div>
+                            <div class="modal__form-field">
+                                <textarea name="comment" class="modal__form-input" placeholder="Комментарий"></textarea>
+                            </div>
+                        </div>
+                        <div class="modal__form-controls">
+                            <button class="modal__form-submit" type="submit">
+                                Хочу демо-доступ
+                            </button>
+                            <div class="modal__form-policy">
+                                Нажимая на кнопку, я соглашаюсь с <a href="#">политикой&nbsp;конфиденциальности</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="modal js-modal" id="bank-modal">
+                <div class="modal__inner">
+                    <button class="modal__close js-close-modal">
+                        <svg width="14" height="14" aria-hidden="true" class="icon-cross">
+                            <use xlink:href="#cross"></use>
+                        </svg>
+                    </button>
+                    <h3 class="modal__heading">
+                        Какой банк вы бы хотели видеть?
+                    </h3>
+                    <div class="modal__text">
+                        Оставьте контактные данные и мы подарим вам бонус
+                    </div>
+                    <form action="/" method="POST" class="modal__form" data-need-validation="">
+                        <div class="modal__form-fields">
+                            <div class="modal__form-field">
+                                <input type="text" class="modal__form-input" name="name" placeholder="Имя" required="">
+                            </div>
+                            <div class="modal__form-field">
+                                <input type="tel" class="modal__form-input js-phone-input" name="phone" placeholder="Телефон"
+                                    required="" data-parsley-phone="">
+                            </div>
+                            <div class="modal__form-field">
+                                <textarea name="comment" class="modal__form-input" placeholder="Комментарий"></textarea>
+                            </div>
+                        </div>
+                        <div class="modal__form-controls">
+                            <button class="modal__form-submit" type="submit">
+                                Отправить
+                            </button>
+                            <div class="modal__form-policy">
+                                Нажимая на кнопку, я соглашаюсь с <a href="#">политикой&nbsp;конфиденциальности</a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>            <style>
+                .ie-placeholder {
+                    z-index: 4000;
+                    position: fixed;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: #202020;
+                    color: white;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: center;
+                    
+                }
+                .ie-placeholder__message {
+                    font-size: 2rem;
+                    line-height: 1.2;
+                    font-weight: 500;
+                    margin: auto;
+                }
+                @supports (display: grid) {
+                    .ie-placeholder {
+                        display: none;
+                    }
+                }
+            </style>
+            <div class="ie-placeholder">
+                <div class="ie-placeholder__message">
+                    Извините, ваш браузер не поддерживается
+                </div>
+            </div>            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="js/app.js"></script>
+            <script src="assets/js/backend.js"></script>
         </div>
-    </div>    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="js/app.js"></script>
-    <script src="assets/js/backend.js"></script>
-</div>
-</body>
+    </body>
 
 </html>

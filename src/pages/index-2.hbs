@@ -1,4 +1,4 @@
-{{#extend "layout"}}
+{{#extend "layout-2"}}
     {{#content "main"}}
 
 
@@ -23,9 +23,9 @@
                                         <div class="service__slider-card-image-wrapper">
                                             <img src="img/service/1.png" alt="" class="service__slider-card-image">
                                             <div class="service__slider-card-label">
-                                        <span>
-                                            Зарабатывайте<br>на регистрации
-                                        </span>
+                                                <span>
+                                                    Зарабатывайте<br>на регистрации
+                                                </span>
 
                                             </div>
                                         </div>
@@ -51,9 +51,9 @@
                                         <div class="service__slider-card-image-wrapper">
                                             <img src="img/service/2.png" alt="" class="service__slider-card-image">
                                             <div class="service__slider-card-label">
-                                        <span>
-                                           Проводите полностью<br> удаленные сделки
-                                        </span>
+                                                <span>
+                                                    Проводите полностью<br> удаленные сделки
+                                                </span>
                                             </div>
                                         </div>
                                         <ul class="service__slider-card-list">
@@ -75,9 +75,9 @@
                                         <div class="service__slider-card-image-wrapper">
                                             <img src="img/service/3.png" alt="" class="service__slider-card-image">
                                             <div class="service__slider-card-label">
-                                        <span>
-                                            Работайте<br>с удобством
-                                        </span>
+                                                <span>
+                                                    Работайте<br>с удобством
+                                                </span>
                                             </div>
                                         </div>
                                         <ul class="service__slider-card-list">
@@ -99,6 +99,34 @@
                                         </ul>
                                     </div>
                                 </div>
+                                <div class="swiper-slide">
+                                    <div class="service__slider-card">
+                                        <div class="service__slider-card-image-wrapper">
+                                            <img src="img/service/4.png" alt="" class="service__slider-card-image">
+                                            <div class="service__slider-card-label">
+                                                <span>
+                                                    Контролируйте<br> весь процесс
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <ul class="service__slider-card-list">
+                                            <li class="service__slider-card-list-item">
+                                                Управляйте филиальной сетью аккаунтов.
+                                            </li>
+                                            <li class="service__slider-card-list-item">
+                                                Контролируйте статус заявок в личном кабинете.
+
+                                            </li>
+                                            <li class="service__slider-card-list-item">
+                                                Интегрируйте решение с вашей CRM-системой
+
+                                            </li>
+                                            <li class="service__slider-card-list-item">
+                                                Храните историю и документы в личном кабинете
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
@@ -108,40 +136,7 @@
         </section>
 
 
-        <section class="subscribe">
-            <div class="container">
-                <div class="subscribe__content">
-                    <div class="subscribe__text-content">
-                        <h2 class="subscribe__heading">
-                            Не ждите, что ситуация на рынке станет лучше, зарабатывайте уже сегодня
-                        </h2>
-                        <div class="subscribe__text">
-                            Оставьте контакты и получите<br> выгодное решение
-                        </div>
-                    </div>
-                    <form action="/" method="POST" class="subscribe__form" data-need-validation="">
-                        <div class="subscribe__form-fields">
-                            <div class="subscribe__form-field">
-                                <input type="text" name="name" class="subscribe__form-input" placeholder="Имя"
-                                       required="">
-                            </div>
-                            <div class="subscribe__form-field">
-                                <input type="tel" name="phone" class="subscribe__form-input js-phone-input"
-                                       placeholder="8 (987) 650-43-21" required="" data-parsley-phone="">
-                            </div>
-                        </div>
-                        <div class="subscribe__form-controls">
-                            <div class="subscribe__form-policy">
-                                Нажимая на кнопку, я соглашаюсь с <a href="#">политикой&nbsp;конфиденциальности</a>
-                            </div>
-                            <button class="subscribe__form-submit" type="submit">
-                                Отправить
-                            </button>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </section>
+
         <section class="operations">
             <div class="container">
                 <div class="operations__content">
@@ -319,6 +314,40 @@
                         </div>
                     </li>
                 </ul>
+            </div>
+        </section>
+        <section class="subscribe">
+            <div class="container">
+                <div class="subscribe__content">
+                    <div class="subscribe__text-content">
+                        <h2 class="subscribe__heading">
+                            Не ждите, что ситуация на рынке станет лучше, зарабатывайте уже сегодня
+                        </h2>
+                        <div class="subscribe__text">
+                            Оставьте контакты и получите<br> выгодное решение
+                        </div>
+                    </div>
+                    <form action="/" method="POST" class="subscribe__form" data-need-validation="">
+                        <div class="subscribe__form-fields">
+                            <div class="subscribe__form-field">
+                                <input type="text" name="name" class="subscribe__form-input" placeholder="Имя"
+                                    required="">
+                            </div>
+                            <div class="subscribe__form-field">
+                                <input type="tel" name="phone" class="subscribe__form-input js-phone-input"
+                                    placeholder="8 (987) 650-43-21" required="" data-parsley-phone="">
+                            </div>
+                        </div>
+                        <div class="subscribe__form-controls">
+                            <div class="subscribe__form-policy">
+                                Нажимая на кнопку, я соглашаюсь с <a href="#">политикой&nbsp;конфиденциальности</a>
+                            </div>
+                            <button class="subscribe__form-submit" type="submit">
+                                Отправить
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
 
@@ -522,7 +551,7 @@
                                                 Создание филиальных инстансов
                                             </li>
                                         </ul>
-                                        <a href="#" class="tariffs__card-link">
+                                        <a href="#callback-modal" class="tariffs__card-link">
                                             Мне подходит
                                         </a>
                                         <div class="tariffs__card-price">
@@ -588,7 +617,7 @@
                                                 Создание филиальных инстансов
                                             </li>
                                         </ul>
-                                        <a href="#" class="tariffs__card-link">
+                                        <a href="#callback-modal" class="tariffs__card-link">
                                             Мне подходит
                                         </a>
                                         <div class="tariffs__card-price">
@@ -643,7 +672,7 @@
                                             </li>
 
                                         </ul>
-                                        <a href="#" class="tariffs__card-link">
+                                        <a href="#callback-modal" class="tariffs__card-link">
                                             Мне подходит
                                         </a>
                                         <div class="tariffs__card-price">
@@ -693,7 +722,7 @@
                                         покупке квартиры на первичном рынке.
                                     </h3>
                                     <div class="reviews__slider-card-text">
-                                        Вместо четырёх этапов клиент проходит через два: выбирает квартиру у застройщика
+                                        Вместо четырёх этапов клиент проходит через два: выбирает квартируу застройщика
                                         и подписывает договор участия в долевом строительстве, а затем в банке
                                         подписывает все документы и отправляет в Росреестр на регистрацию
                                     </div>
@@ -721,7 +750,7 @@
                                         покупке квартиры на первичном рынке.
                                     </h3>
                                     <div class="reviews__slider-card-text">
-                                        Вместо четырёх этапов клиент проходит через два: выбирает квартиру у застройщика
+                                        Вместо четырёх этапов клиент проходит через два: выбирает квартируу застройщика
                                         и подписывает договор участия в долевом строительстве, а затем в банке
                                         подписывает все документы и отправляет в Росреестр на регистрацию
                                     </div>
@@ -862,19 +891,19 @@
                             <li class="about__team-list-item">
                                 <div class="about__team-card">
                                     <div class="about__team-card-image-container">
-                                        <img src="img/team/3.jpg" alt="" class="about__team-card-image">
+                                        <img src="img/team/2.jpg" alt="" class="about__team-card-image">
                                     </div>
                                     <div class="about__team-card-role">
-                                        CTO
+                                        Product manager
                                     </div>
                                     <h3 class="about__team-card-title">
-                                        Игорь Пастухов
+                                        Лиля Бадретдинова
                                     </h3>
                                     <div class="about__team-card-label">
-                                        20 лет в IT
+                                        5 на рынке ЭР
                                     </div>
                                     <div class="about__team-card-text">
-                                        Построение IT-инфраструктурыи разработка ПО.
+                                        Эксперт по электронной регистраци - знает все юридические нюансы.
                                     </div>
                                     <a href="#" class="about__team-card-link">
                                         Читать полностью
@@ -913,6 +942,58 @@
                         </ul>
                     </div>
                 </div>
+            </div>
+        </section>
+
+        <section class="numbers numbers--green">
+            <div class="container">
+                <div class="numbers__text">
+                    Благодаря нашим технологиям сегодня можно в одном окне подобрать актуальные ипотечные программы и
+                    субсидированные ставки, не собирая их по чатам в ватсап или телеграм. А еще можно провести сделку
+                    купли-продажи квартиры из любой точки мира — понадобится лишь загранпаспорт.
+                </div>
+                <ul class="numbers__list">
+                    <li class="numbers__list-item">
+                        <div class="numbers__card">
+                            <h3 class="numbers__card-title">
+                                15 000+
+                            </h3>
+                            <div class="numbers__card-text">
+                                транзакций провели через наш сервис
+                            </div>
+                        </div>
+                    </li>
+                    <li class="numbers__list-item">
+                        <div class="numbers__card">
+                            <h3 class="numbers__card-title">
+                                В 20 регионах
+                            </h3>
+                            <div class="numbers__card-text">
+                                РФ пользуются нашими продуктами
+                            </div>
+                        </div>
+                    </li>
+                    <li class="numbers__list-item">
+                        <div class="numbers__card">
+                            <h3 class="numbers__card-title">
+                                15 лет
+                            </h3>
+                            <div class="numbers__card-text">
+                                опыта в недвижимости
+                            </div>
+                        </div>
+                    </li>
+                    <li class="numbers__list-item">
+                        <div class="numbers__card">
+                            <h3 class="numbers__card-title">
+                                90%
+                            </h3>
+                            <div class="numbers__card-text">
+                                застройщиков РТ работают с нами
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </section>
         <section class="details">
@@ -1041,20 +1122,19 @@
                             <div class="demo__form-fields">
                                 <div class="demo__form-field">
                                     <input type="text" name="name" class="demo__form-input" required=""
-                                           placeholder="Имя"
-                                           required="">
+                                        placeholder="Имя" required="">
                                 </div>
                                 <div class="demo__form-field">
                                     <input type="tel" name="phone" class="demo__form-input js-phone-input" required=""
-                                           placeholder="Телефон" required="">
+                                        placeholder="Телефон" required="">
                                 </div>
                                 <div class="demo__form-field">
                                     <input type="text" name="company" class="demo__form-input" required=""
-                                           placeholder="Компания" required="">
+                                        placeholder="Компания" required="">
                                 </div>
                                 <div class="demo__form-field">
                                     <textarea name="comment" class="demo__form-input"
-                                              placeholder="Комментарий"></textarea>
+                                        placeholder="Комментарий"></textarea>
                                 </div>
                             </div>
                             <div class="demo__form-controls">
