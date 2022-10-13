@@ -12,7 +12,7 @@ export default function service() {
     const elements = Array.from(document.querySelectorAll('.js-service'));
 
     elements.forEach(element => {
-        if (!IS_MOBILE) {
+        if (!IS_MOBILE && !element.classList.contains('js-service-with-arrows')) {
             const wrapper = element.querySelector('.service__slider-wrapper');
             const slides = Array.from(element.querySelectorAll('.swiper-slide'));
             const tl = gsap.timeline({
@@ -46,7 +46,11 @@ export default function service() {
             new Swiper(container, {
                 slidesPerView: 'auto',
                 spaceBetween: 0,
-                speed: 500
+                speed: 500,
+                navigation: {
+                    nextEl: element.querySelector('.service__arrow--next'),
+                    prevEl: element.querySelector('.service__arrow--prev')
+                }
             });
         }
     });
